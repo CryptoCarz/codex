@@ -1,7 +1,7 @@
 require('./axios.min.js'); // Inject axios mock
 
 const https = require("https");
-const axios = globalThis.axios || window.axios;
+const axios = globalThis.axios;
 
 // Disable SSL check for test purposes (optional)
 const agent = new https.Agent({ rejectUnauthorized: false });
